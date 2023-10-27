@@ -2,7 +2,7 @@
 attachments: [transactions_problems.png]
 title: Section 1 - Transactions
 created: '2023-10-20T06:37:16.714Z'
-modified: '2023-10-20T06:53:00.773Z'
+modified: '2023-10-27T04:45:52.475Z'
 ---
 
 # Section 1 - Transactions
@@ -28,3 +28,5 @@ Every transaction has it's own copy of data and works on it. Similar to Serializ
 
 ![problems visible in each transaction type](./../attachments/transactions_problems.png)
 
+Note:
+Some long failed transactions can create dead rows, which can alter the performance of the queries. So, when vacuum runs, it cleans those things.
