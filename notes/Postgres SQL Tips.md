@@ -2,7 +2,7 @@
 attachments: [grades.sql, students.sql]
 title: Postgres SQL Tips
 created: '2023-10-25T05:38:34.804Z'
-modified: '2023-10-27T03:39:36.631Z'
+modified: '2023-10-31T09:23:21.551Z'
 ---
 
 # Postgres SQL Tips
@@ -66,7 +66,11 @@ Used to check if query is served from buffer
 explain (analyze, buffers) from employees where id = 3000;
 ```
 
-
+### Table Sizes
+```sql
+select pg_relation_size(oid), relname from pg_class order by pg_relation_size(oid) desc;
+```
+Sizes are in bytes
 
 
 ### Some Trivia Points
