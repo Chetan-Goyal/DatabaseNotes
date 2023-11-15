@@ -1,8 +1,8 @@
 ---
-attachments: [bloom_filter.png]
 title: Section 4 - Database Indexing
-created: '2023-10-25T05:25:56.034Z'
-modified: '2023-10-27T04:42:29.492Z'
+attachments: [bloom_filter.png]
+created: 2023-10-25T05:25:56.034Z
+modified: 2023-11-15T07:18:15.910Z
 ---
 
 # Section 4 - Database Indexing
@@ -108,7 +108,7 @@ create index concurrently g on grades(x);
 
 
  ### Bloom Filter
-![bloom filter](./../attachments/bloom_filter.png)
+![bloom filter](../attachments/bloom_filter.png)
 
 
  Create an array of bits with arbitary static number (let's say, 64), if we search for a username, it will do a hash of that username and mod by 64. It will mark bit of result index as 1. Next time when we have to check for username, we will first check in this array instead of repeated IO.

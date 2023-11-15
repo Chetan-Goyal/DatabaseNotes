@@ -1,8 +1,8 @@
 ---
-attachments: [DB_Engines.png]
 title: Section 11 - Database Engines
-created: '2023-11-13T04:49:30.504Z'
-modified: '2023-11-15T04:09:47.589Z'
+attachments: [DB_Engines.png]
+created: 2023-11-13T04:49:30.504Z
+modified: 2023-11-15T07:18:15.909Z
 ---
 
 # Section 11 - Database Engines
@@ -68,7 +68,7 @@ modified: '2023-11-15T04:09:47.589Z'
 - MyRocks for MySQL, MariaDB and Percona   . LevelDB can't be used in MySQL etc
 - MongoRocks for MongoDB
 
-![Popular DB Engines](./../attachments/DB_Engines.png)
+![Popular DB Engines](../attachments/DB_Engines.png)
 
 - Note: Here, couch db is good. :) It works on HTTP so helps us to avoid creating our own store in client side and backend. We can kind of use the database as a webserver
 ***Counch DB:** Seamless multi-master sync, that scales from Big Data to Mobile, with an Intuitive HTTP/JSON API and designed for Reliability.*

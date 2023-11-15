@@ -1,14 +1,14 @@
 ---
-attachments: [master_replication.png]
 title: Section 9 - Database Replication
-created: '2023-11-06T03:17:07.906Z'
-modified: '2023-11-09T05:39:27.182Z'
+attachments: [master_replication.png]
+created: 2023-11-06T03:17:07.906Z
+modified: 2023-11-15T07:18:15.910Z
 ---
 
 # Section 9 - Database Replication
 
 ## Master/Backup Replication
-![Master Replication](./../attachments/master_replication.png)
+![Master Replication](../attachments/master_replication.png)
 - Only one master node accepts writes / DDLs
 - One or more backup/standby nodes receives these writes from Master via TCP
 - Simple Implementation, no possibility of conflicts

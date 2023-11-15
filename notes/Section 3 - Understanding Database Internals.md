@@ -1,8 +1,8 @@
 ---
-attachments: [pages.png, row_column_db.png]
 title: Section 3 - Understanding Database Internals
-created: '2023-10-20T06:58:01.276Z'
-modified: '2023-10-20T07:42:07.408Z'
+attachments: [pages.png, row_column_db.png]
+created: 2023-10-20T06:58:01.276Z
+modified: 2023-11-15T07:17:45.406Z
 ---
 
 # Section 3 - Understanding Database Internals
@@ -10,7 +10,7 @@ modified: '2023-10-20T07:42:07.408Z'
 ## How Tables and Indexes are stored on disk?
 
 
-![Pages in Memory](./../attachments/pages.png)
+![Pages in Memory](../attachments/pages.png)
 
 ### Table
 - Table refers to structured data with rows and columns. // remaining part is just common knowledge
@@ -55,7 +55,7 @@ First search in Index, (It has less pages, means faster) then after getting the 
 
 ## Row based vs Column based Database
 
-![Row and Column DB](./../attachments/row_column_db.png)
+![Row and Column DB](../attachments/row_column_db.png)
 
 ### Row Based Database
 1. Complete Row data is stored together (see top image). So, good in case of accessing all row data / most of the raw data.

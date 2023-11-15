@@ -1,8 +1,8 @@
 ---
-attachments: [automate_partitions.zip]
 title: Section 6 - Partitioning
-created: '2023-10-31T07:56:25.128Z'
-modified: '2023-10-31T14:52:20.937Z'
+attachments: [automate_partitions.zip]
+created: 2023-10-31T07:56:25.128Z
+modified: 2023-11-15T07:18:15.910Z
 ---
 
 # Section 6 - Partitioning
@@ -93,4 +93,4 @@ Database automatically creates index on all of the parititions automatically.
 
 
 ## Automate Partitioning Script
-You can download it from [here](./../attachments/automate_partitions.zip)
+You can download it from [here](../attachments/automate_partitions.zip)

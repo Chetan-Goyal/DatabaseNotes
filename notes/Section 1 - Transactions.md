@@ -1,8 +1,8 @@
 ---
-attachments: [transactions_problems.png]
 title: Section 1 - Transactions
-created: '2023-10-20T06:37:16.714Z'
-modified: '2023-11-06T07:42:17.765Z'
+attachments: [transactions_problems.png]
+created: 2023-10-20T06:37:16.714Z
+modified: 2023-11-15T07:14:50.147Z
 ---
 
 # Section 1 - Transactions
@@ -26,7 +26,7 @@ All transactions are serialiaised. means one after the other like a queue.
 Every transaction has it's own copy of data and works on it. Similar to Serializable but the changes of transaction A will not be visible in transaction B.
 
 
-![problems visible in each transaction type](./../attachments/transactions_problems.png)
+![problems visible in each transaction type](../attachments/transactions_problems.png)
 
 Official Postgresql transaction comparison: https://www.postgresql.org/docs/current/transaction-iso.html#MVCC-ISOLEVEL-TABLE
 
