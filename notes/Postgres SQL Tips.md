@@ -1,8 +1,8 @@
 ---
-attachments: [grades.sql, students.sql]
 title: Postgres SQL Tips
-created: '2023-10-25T05:38:34.804Z'
-modified: '2023-10-31T09:23:21.551Z'
+attachments: [grades.sql, students.sql]
+created: 2023-10-25T05:38:34.804Z
+modified: 2023-10-31T09:23:21.551Z
 ---
 
 # Postgres SQL Tips

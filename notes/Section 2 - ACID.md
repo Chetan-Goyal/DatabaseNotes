@@ -1,7 +1,7 @@
 ---
 title: Section 2 - ACID
-created: '2023-10-20T05:21:41.641Z'
-modified: '2023-10-20T06:57:34.704Z'
+created: 2023-10-20T05:21:41.641Z
+modified: 2023-10-20T06:57:34.704Z
 ---
 
 # Section 2 - ACID

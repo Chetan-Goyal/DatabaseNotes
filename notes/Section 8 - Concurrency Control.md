@@ -1,7 +1,7 @@
 ---
 title: Section 8 - Concurrency Control
-created: '2023-11-03T03:34:44.101Z'
-modified: '2023-11-06T03:15:00.238Z'
+created: 2023-11-03T03:34:44.101Z
+modified: 2023-11-06T03:15:00.238Z
 ---
 
 # Section 8 - Concurrency Control

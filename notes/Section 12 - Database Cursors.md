@@ -1,7 +1,7 @@
 ---
 title: Section 12 - Database Cursors
-created: '2023-11-15T04:12:24.065Z'
-modified: '2023-11-15T06:30:09.406Z'
+created: 2023-11-15T04:12:24.065Z
+modified: 2023-11-15T06:30:09.406Z
 ---
 
 # Section 12 - Database Cursors
