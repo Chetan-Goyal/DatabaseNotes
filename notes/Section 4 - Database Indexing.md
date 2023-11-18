@@ -1,8 +1,8 @@
 ---
-title: Section 4 - Database Indexing
 attachments: [bloom_filter.png]
-created: 2023-10-25T05:25:56.034Z
-modified: 2023-11-15T07:18:15.910Z
+title: Section 4 - Database Indexing
+created: '2023-10-25T05:25:56.034Z'
+modified: '2023-11-18T16:03:50.310Z'
 ---
 
 # Section 4 - Database Indexing
@@ -29,6 +29,19 @@ select count(*) from temp;
 ```sql
 create index employees_name on employees(name);
 ```
+
+### Problem with Index Creation
+Creation of Indexes blocks all write/update operations since indexing refers to creation of b+tree index and concurrent insertions are almost impossible to manage due to pre defined tree structure. 
+
+
+<details>
+  <summary>Solution</summary>
+  <markdown>
+  We have another way of index creation which slows down the creation but works in production with no downtime. It works in a way that it logs the last commit hash of wal log and starts creating the index. After creation, goes through the WAL logs and check which new commits are not added in index. Then adds those commits. It keeps on repeating this process until all records are indexed in the DB. Our index creation is stuck until it is completely syned.
+  </markdown>
+</details>
+
+
 Above command goes through all records and create a bitmap for it on name columns..
 
 ```sql
