@@ -2,7 +2,7 @@
 title: Postgres SQL Tips
 attachments: [grades.sql, students.sql]
 created: 2023-10-25T05:38:34.804Z
-modified: 2023-10-31T09:23:21.551Z
+modified: 2023-11-24T03:45:12.364Z
 ---
 
 # Postgres SQL Tips
@@ -76,4 +76,4 @@ Sizes are in bytes
 ### Some Trivia Points
 1. Sometimes, Some part of actual query results can be served from the disk. (eg:  picking 60% from disk and 40% from cache considering only 40% were available in cache)
 2. If heap fetches with buffers is 0, It means we didn't go to the disk and fetched from most probably Index only. 
-3. With Only Index, we still see some read in the output. Reason: we still have to fetch index from the disk. :P
+3. If Index is large, it will be stored in disk. So, Only Index scan will show something about reading from disk (heap). :P

@@ -2,7 +2,7 @@
 title: Section 3 - Understanding Database Internals
 attachments: [pages.png, row_column_db.png]
 created: 2023-10-20T06:58:01.276Z
-modified: 2023-11-15T07:17:45.406Z
+modified: 2023-11-24T03:50:55.630Z
 ---
 
 # Section 3 - Understanding Database Internals
@@ -16,7 +16,7 @@ modified: 2023-11-15T07:17:45.406Z
 - Table refers to structured data with rows and columns. // remaining part is just common knowledge
 
 ### Row_id
-some db (mysql- innoDB) use the primary key as row_id and some db (postgresql) uses it's own id as row_id.
+some db (mysql- innoDB) use the primary key as row_id and some db (postgresql) uses it's own generated id as row_id.
 contains some extra data for easy page no identification for quick access
 
 
@@ -50,7 +50,7 @@ First search in Index, (It has less pages, means faster) then after getting the 
 #### Notes
 1. When heap table is organised around a single index, then it is called clustered index like in case of mysql which has primary key and other indexes point to the primary key.
 2. Postgres only have secondary indexes and all indexes point to the row_id directly which lives in the heap.
-3. primary keys is usually a clustered index uless otherwise specified.
+3. primary keys is usually a clustered index unless otherwise specified.
 
 
 ## Row based vs Column based Database

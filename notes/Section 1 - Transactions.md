@@ -2,7 +2,7 @@
 title: Section 1 - Transactions
 attachments: [transactions_problems.png]
 created: 2023-10-20T06:37:16.714Z
-modified: 2023-11-17T15:24:34.381Z
+modified: 2023-11-24T03:47:37.691Z
 ---
 
 # Section 1 - Transactions
@@ -14,8 +14,9 @@ Any change in any transaction (whether committed or not) can be observed in othe
 Only commited changes from other transactions are visible in our transaction.
 
 ## Repeatable Read
-Even if data is changed, our transaction will consider the same data even when it is read again. (ONly in case of Postgresql, other shows different data)
-Important Point (Non Postgres) : As name suggests, It allows repeatable read means row level locking on already read data. So, if some data is inserted, it will be visible in the results as lock is not present there.
+Even if data is changed, our transaction will show different data when it is read again. (ONly in case of Postgresql, we see same data)
+
+**Important Point (Non Postgres) : As name suggests, It allows repeatable read means row level locking on already read data. So, if some data is inserted, it will be visible in the results as lock is not present there.**
 
 ## Serializable
 All transactions are serialiaised. means one after the other like a queue.
@@ -28,7 +29,7 @@ Every transaction has it's own copy of data and works on it. Similar to Serializ
 
 
 ![problems visible in each transaction type](../attachments/transactions_problems.png)
-
+Above image doesn't represent postgres entirely since Repeatable Read is a special case in Postgres.
 Official Postgresql transaction comparison: https://www.postgresql.org/docs/current/transaction-iso.html#MVCC-ISOLEVEL-TABLE
 
 Note:

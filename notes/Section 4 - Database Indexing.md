@@ -1,8 +1,8 @@
 ---
-attachments: [bloom_filter.png]
 title: Section 4 - Database Indexing
-created: '2023-10-25T05:25:56.034Z'
-modified: '2023-11-18T16:03:50.310Z'
+attachments: [bloom_filter.png]
+created: 2023-10-25T05:25:56.034Z
+modified: 2023-11-24T03:52:30.007Z
 ---
 
 # Section 4 - Database Indexing
